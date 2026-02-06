@@ -92,11 +92,6 @@ def solve_Laplace_equation(V,B,r_repmat,h,idx_z1,idx_z2,idx_R,V1,V2,eps):
         #print(iteration_jacobi_FAST() - eps)
     return compteur
 
-
-
-
-
-
 def compute_E_disk(V,B,h):
     Nz = V.shape[0]
     Nr = V.shape[1]
@@ -221,7 +216,7 @@ def calculate_V_disk_at_origin_uniform_surface_charge_density(z_disk,charge_one_
     #ax.view_init(60, 35)
     # Set specific Z-axis ticks
     ax.set_zticks([-1, 0, 1])
-    ax.plot([0, 0], [-1, 1], 'k', linewidth=2)  # vierkante haken om 0,0 toegevoegd
+    ax.plot([0, 0], [0, 0], [-1, 1], 'k', linewidth=2)  # vierkante haken om 0,0 toegevoegd
     #ax.set_zlim(-1, 1)
     ax.legend(['punt ladingen','schijf as'])
     # Labels
