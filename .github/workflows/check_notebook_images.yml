@@ -1,0 +1,26 @@
+name: Check Notebook Image References
+
+on:
+  pull_request:
+    branches:
+    - '**'
+    paths:
+      - book/**
+      - .github/workflows/check_notebook_cell_order.yml
+  push:
+
+jobs:
+  check-images:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Check notebook image references
+        run: |
+          python scripts/check_notebook_images.py

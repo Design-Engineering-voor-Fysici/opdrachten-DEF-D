@@ -1,0 +1,45 @@
+.model  nekl  nmos
++level = 49   
++version = 3.2             mobmod  = 1               capmod  = 0              nqsmod  = 0             
++binunit = 1               paramchk= 0                         
++vfbflag = 0                      
++tref    = 25                                      
++ld      = 0               llc     = 0               lwc     = 0             
++lwlc    = 0               wlc     = 0               wwc     = 0               wwlc    = 0             
++tox     = 1e-007          toxm    = 1e-007          wint    = -1.3000878e-006  lint    = 3.9931632e-007
++hdif    = 0               ldif    = 0               ll      = 0               wl      = 0             
++lln     = 1               wln     = 1               lw      = 0               ww      = 0             
++lwn     = 1               wwn     = 1               lwl     = 0               wwl     = 0             
++cgbo    = 0               xpart   = 1             
++vth0    = 1.0255755       k1      = 1.5961015       k2      = -0.06           k3      = 15.919406     
++k3b     = -7.113511       nlx     = 0               vbm     = -3              dvt0    = 2.4481878     
++dvt1    = 0.66823344      dvt2    = -0.031099273    dvt0w   = 0.88173932      dvt1w   = 45899.231     
++dvt2w   = 0               nch     = 2.0064e+016     voff    = -7.8096268      nfactor = 4.9835838     
++cdsc    = 0               cdscb   = -0.00029430785  cdscd   = 0               cit     = 0.0003107754  
++u0      = 0.059608        ua      = 2.1677e-009     ub      = 4.4958e-019     uc      = -2.9295e-011  
++ngate   = 0               xj      = 1.5e-007        w0      = 0               prwg    = 0             
++prwb    = 0               wr      = 1               rdsw    = 0               a0      = 0.6105386     
++ags     = 0.1             a1      = 0.01            a2      = 1               b0      = 3.6195968e-006
++b1      = 5.9928421e-005  vsat    = 122774.2        keta    = 0.068470003     dwg     = -4.3070327e-007
++dwb     = -3.6919843e-007  alpha0  = 0               beta0   = 30              pclm    = 15.252        
++pdiblc1 = 0.16938795      pdiblc2 = 0               pdiblcb = 1               drout   = 0.49848551    
++pvag    = 0.70000716      pscbe1  = 4.24e+008       pscbe2  = 8e-006          delta   = 0.01          
++eta0    = 0               etab    = -0.010129428    dsub    = 0.016400197     elm     = 5             
++alpha1  = 0             
++clc     = 1e-007          cle     = 0.6             ckappa  = 0.6             cgdl    = 0             
++cgsl    = 0               vfbcv   = -1              acde    = 1               moin    = 15            
++noff    = 1               voffcv  = 0             
++kt1     = -0.11           kt1l    = 0               kt2     = 0.022           ute     = -1.5          
++ua1     = 4.31e-009       ub1     = -7.61e-018      uc1     = -5.6e-011       prt     = 0             
++at      = 33000         
++noimod  = 1               noia    = 1e+020          noib    = 50000           noic    = -1.4e-012     
++em      = 41000000        af      = 1               ef      = 1               kf      = 0             
++gdsnoi  = 1             
++rsh     = 0               js      = 0.0001          jsw     = 0               cj      = 0.0005        
++mj      = 0.5             cjsw    = 5e-010          mjsw    = 0.33            pb      = 1             
++rd      = 0               rs      = 0                            
++xti     = 3               acm     = 12              calcacm = 0               nj      = 1             
++pbsw    = 1               tt      = 0               ijth    = 0.1           
++tcj     = 0               tcjsw   = 0               tcjswg  = 0               tpb     = 0             
++tpbsw   = 0               tpbswg  = 0             
+ 

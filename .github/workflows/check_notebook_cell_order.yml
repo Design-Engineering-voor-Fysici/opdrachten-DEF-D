@@ -1,0 +1,25 @@
+name: Check Jupyter Notebook Cell Order
+
+on:
+  pull_request:
+    branches:
+    - '**'
+    paths:
+      - book/**
+      - .github/workflows/check_notebook_cell_order.yml
+  push:
+
+jobs:
+  notebook-order:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Run notebook execution order check
+        run: |
+          python scripts/check_notebook_cell_order.py
