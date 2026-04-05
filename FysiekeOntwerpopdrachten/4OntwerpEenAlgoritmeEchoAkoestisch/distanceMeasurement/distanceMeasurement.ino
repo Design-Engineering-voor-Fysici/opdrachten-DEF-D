@@ -23,8 +23,8 @@
 #define echoPin 6
 
 //the calibration constants
-#define alpha 0.0347
-#define beta -1.0
+#define alpha 0.035974
+#define beta -6.610854
 
 void setup() {
   Serial.begin (9600);
@@ -48,7 +48,7 @@ void loop() {
   //float distance = alpha * exp(duration * beta);
 
   //only print results if within 0 to 200 cm.
-  if (not(distance >= 200 || distance <= 0)){
+  if (not(distance >= 150 || distance <= 0)){
     Serial.println(distance);
   }
   delay(50);
