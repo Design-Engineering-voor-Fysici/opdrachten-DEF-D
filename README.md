@@ -23,4 +23,4 @@ Voor ontwerpopdracht 3 leveren we hier wel de juiste files alvast.
 De digitale opdrachten zijn opdrachten die je in je eigen tijd moet maken met een groepsgenoot.
 
 1. Condensator opdracht
-2. Magnetische spoel opdracht
+2. Krachtactuator opdracht
