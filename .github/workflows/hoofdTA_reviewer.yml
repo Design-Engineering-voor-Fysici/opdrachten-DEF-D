@@ -1,0 +1,25 @@
+name: Request hoofd-TA review
+
+on:
+  pull_request:
+    types: [opened]
+    branches:
+      - inprogress
+
+permissions:
+  pull-requests: write
+
+jobs:
+  request-review:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Request hoofd-TA review
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+        run: |
+          gh api \
+            --method POST \
+            "/repos/${{ github.repository }}/pulls/${PR_NUMBER}/requested_reviewers" \
+            -f "team_reviewers[]=hoofd-ta"
